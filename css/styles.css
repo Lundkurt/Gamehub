@@ -9,6 +9,10 @@ li {
   font-family: "Montserrat";
   color: #fff;
 }
+.featured h2,
+.featured p {
+  color: #1d2540;
+}
 
 li {
   list-style-type: none;
@@ -16,6 +20,8 @@ li {
 
 li a {
   text-decoration: none;
+}
+header {
 }
 
 nav ul li {
@@ -33,11 +39,116 @@ nav ul li {
   position: relative;
   margin-left: 300px;
 }
+
 main {
-  min-height: 800px;
   background-image: url(../images/homebackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+main h1 {
+  text-align: center;
+  padding-top: 300px;
+  padding-bottom: 80px;
+  font-size: 50px;
+}
+
+.homebutton {
+  display: grid;
+  grid-template-columns: auto 430px 430px auto;
+  grid-template-rows: 80px;
+  column-gap: 133px;
+  margin-bottom: 300px;
+  text-align: center;
+}
+
+.cta1 {
+  grid-column-start: 2;
+}
+
+.cta2 {
+  grid-column-start: 3;
+}
+
+.cta {
+  background: linear-gradient(#3f518c, #202946);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Montserrat";
+  padding-top: 23px;
+}
+
+.popular {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.popular h2 {
+  grid-column: -1/1;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.featured {
+  background: #fff;
+  width: 288px;
+  height: 304px;
+  margin: 25px;
+  border-radius: 35px;
+  display: grid;
+  grid-template-columns: 35px 35px auto 50px 20px;
+  grid-template-rows: 159px 30px 20px 15px 60px;
+  grid-gap: 5px;
+}
+.item-a {
+  height: 128px;
+  width: auto;
+  grid-column-start: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.item-b {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+.item-c {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  justify-self: start;
+  align-self: center;
+}
+
+.item-d {
+  grid-column-start: 2;
+}
+
+.item-e {
+  grid-column-start: 2;
+  grid-row-start: 5;
+  font-size: 30px;
+  justify-self: start;
+  align-self: center;
+}
+
+.item-f {
+  grid-column-start: 3;
+  grid-row-start: 5;
+  justify-self: end;
+  align-self: center;
+}
+
+.item-g {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  justify-self: end;
+  align-self: center;
 }
 
 footer {
