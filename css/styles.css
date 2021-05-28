@@ -8,6 +8,11 @@ h3,
 li {
   font-family: "Montserrat";
   color: #fff;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
 }
 .featured h2,
 .featured p {
@@ -26,6 +31,7 @@ header {
   grid-template-columns: 280px 1fr 600px;
   grid-template-rows: 216px;
   grid-gap: 20px;
+  max-height: 220px;
 }
 .searchbar {
   max-width: 650px;
@@ -37,10 +43,11 @@ header {
   font-size: 22px;
   font-family: "Montserrat";
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 .wrapper {
   max-width: 35vw;
-  height: 200px;
+  height: 140px;
   display: grid;
   place-items: center;
 }
@@ -59,7 +66,7 @@ header {
 }
 
 .icon__item img {
-  max-width: 75px;
+  max-width: 60px;
   padding: 15px;
 }
 .icon__item a {
@@ -88,19 +95,45 @@ main h1 {
 
 .homebutton {
   display: grid;
-  grid-template-columns: auto 430px 430px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 80px;
   column-gap: 133px;
   margin-bottom: 300px;
   text-align: center;
 }
 
-.cta1 {
+.button-1 {
   grid-column-start: 2;
+  display: inline-block;
+  position: relative;
+  text-align: center;
 }
 
-.cta2 {
+.button-2 {
   grid-column-start: 3;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.buttontext-1 {
+  position: absolute;
+  top: 34%;
+  left: 32%;
+}
+
+.buttontext-2 {
+  position: absolute;
+  top: 34%;
+  left: 32%;
+}
+
+.buttontext-1 a,
+.buttontext-2 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Montserrat";
 }
 
 .cta {
@@ -125,8 +158,8 @@ main h1 {
 
 .featured {
   background: #fff;
-  width: 288px;
-  height: 304px;
+  max-width: 288px;
+  max-width: 304px;
   margin: 25px;
   border-radius: 35px;
   display: grid;
