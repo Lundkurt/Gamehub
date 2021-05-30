@@ -13,7 +13,6 @@ li {
 
 body {
   margin: 0px;
-  font-family: lato;
 }
 .featured h2,
 .featured p {
@@ -29,37 +28,55 @@ li a {
 }
 header {
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 70% 30%;
+  grid-template-columns: 280px 1fr 600px;
+  grid-template-rows: 216px;
+  grid-gap: 20px;
   max-height: 220px;
 }
-
-.burger {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  justify-self: right;
-  margin: 25px;
-}
-
 .searchbar {
-  max-width: 475px;
+  max-width: 650px;
   height: 40px;
   border-radius: 23px;
   border-color: #1d2540;
   border-width: 4px;
+  align-self: end;
   font-size: 22px;
   font-family: "Montserrat";
-  grid-column-start: 1;
-  grid-row-start: 2;
-  margin-left: 10%;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+.wrapper {
+  max-width: 35vw;
+  height: 140px;
+  display: grid;
+  place-items: center;
 }
 
-.wrapper {
-  display: none;
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-family: "Montserrat";
+}
+
+.icon__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__item img {
+  max-width: 60px;
+  padding: 15px;
+}
+.icon__item a {
+  text-decoration: none;
+  color: #1d2540;
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 250px;
   height: auto;
   margin: 25px;
 }
@@ -69,7 +86,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
 }
 main h1 {
   text-align: center;
@@ -79,21 +95,23 @@ main h1 {
 }
 
 .homebutton {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px;
+  column-gap: 133px;
+  margin-bottom: 300px;
   text-align: center;
-  margin-bottom: 150px;
-}
-.button {
-  max-width: 300px;
 }
 
 .button-1 {
+  grid-column-start: 2;
   display: inline-block;
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .button-2 {
+  grid-column-start: 3;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -101,14 +119,14 @@ main h1 {
 
 .buttontext-1 {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 34%;
+  left: 32%;
 }
 
 .buttontext-2 {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 34%;
+  left: 32%;
 }
 
 .buttontext-1 a,
@@ -120,10 +138,19 @@ main h1 {
   font-weight: bold;
 }
 
+.cta {
+  background: linear-gradient(#3f518c, #202946);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Montserrat";
+  padding-top: 23px;
+}
+
 .popular {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  overflow-x: auto;
 }
 .popular h2 {
   grid-column: -1/1;
@@ -133,7 +160,8 @@ main h1 {
 
 .featured {
   background: #fff;
-  max-width: 270px;
+  max-width: 288px;
+  max-width: 304px;
   margin: 25px;
   border-radius: 35px;
   display: grid;
@@ -192,15 +220,13 @@ main h1 {
 }
 
 footer {
-  background-color: #4d4d4d;
+  background-color: #707070;
 }
 .footerlinks {
   display: flex;
-  margin: 10px;
 }
 
 .footerlogo {
-  display: none;
   float: right;
   max-width: 300px;
   height: auto;
@@ -212,85 +238,8 @@ footer p {
   color: #fff;
   font-family: lato;
 }
-footer li {
-  position: relative;
-  right: 30px;
-}
-
 footer li a {
   color: #fff;
 }
 
-footer h3 {
-}
-
-.copyright {
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .burger {
-    display: none;
-  }
-  header {
-    grid-template-columns: 60% 40%;
-  }
-  .wrapper {
-    max-width: 35vw;
-    height: 140px;
-    display: grid;
-    place-items: center;
-    justify-self: end;
-  }
-
-  .icons {
-    display: flex;
-    gap: 1rem;
-    font-family: "Montserrat";
-  }
-
-  .icon__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .icon__item img {
-    max-width: 40px;
-    padding: 15px;
-  }
-  .icon__item a {
-    text-decoration: none;
-    color: #1d2540;
-    font-size: 14px;
-  }
-  .button {
-    margin: 0px 20px 0px 20px;
-  }
-
-  .footerlogo {
-    display: flex;
-  }
-}
-
-@media (min-width: 1300px) {
-  header {
-    grid-template-columns: 50% 50%;
-  }
-  .wrapper {
-  }
-
-  .icon__item img {
-    max-width: 60px;
-    padding: 15px;
-  }
-
-  .logo {
-    max-width: 250px;
-    height: auto;
-    margin: 25px;
-  }
-  .searchbar {
-    margin-left: 280px;
-  }
-} ;
+@media (min-width: 1300px);
