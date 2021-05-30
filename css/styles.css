@@ -99,12 +99,7 @@ main h1 {
   text-align: center;
 }
 
-.buttontext-1 {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-
+.buttontext-1,
 .buttontext-2 {
   position: absolute;
   top: 25%;
@@ -239,7 +234,7 @@ footer h3 {
     height: 140px;
     display: grid;
     place-items: center;
-    justify-self: end;
+    justify-items: end;
   }
 
   .icons {
@@ -266,6 +261,17 @@ footer h3 {
   }
   .button {
     margin: 0px 20px 0px 20px;
+    max-width: 350px;
+  }
+  .buttontext-1,
+  .buttontext-2 {
+    position: absolute;
+    top: 23%;
+    left: 28%;
+  }
+  .buttontext-1 a,
+  .buttontext-2 a {
+    font-size: 28px;
   }
 
   .footerlogo {
@@ -278,6 +284,21 @@ footer h3 {
     grid-template-columns: 50% 50%;
   }
   .wrapper {
+  }
+
+  .button {
+    margin: 0px 40px 0px 40px;
+    max-width: 430px;
+  }
+  .buttontext-1,
+  .buttontext-2 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+  }
+  .buttontext-1 a,
+  .buttontext-2 a {
+    font-size: 33px;
   }
 
   .icon__item img {
