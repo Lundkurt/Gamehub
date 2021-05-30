@@ -206,7 +206,13 @@ footer {
 footer p {
   color: #fff;
   font-family: lato;
+  margin: 15px;
 }
+
+footer h2 {
+  margin-left: 15px;
+}
+
 footer li {
   position: relative;
   right: 30px;
@@ -216,12 +222,13 @@ footer li a {
   color: #fff;
 }
 
-footer h3 {
-}
-
 .copyright {
   text-align: center;
 }
+.copyright a {
+  font-size: 8px;
+}
+
 @media (min-width: 1024px) {
   .burger {
     display: none;
