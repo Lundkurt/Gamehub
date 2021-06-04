@@ -37,6 +37,7 @@ header {
 .burger {
   grid-column-start: 2;
   grid-row-start: 1;
+  position: absolute;
   justify-self: right;
   margin: 25px;
 }
@@ -52,10 +53,12 @@ header {
   grid-column-start: 1;
   grid-row-start: 2;
   margin-left: 10%;
+  padding-left: 15px;
 }
 
 .wrapper {
   display: none;
+  margin: auto;
 }
 
 .logo {
@@ -192,15 +195,13 @@ footer {
 .footerlinks {
   display: flex;
   margin: 10px;
+  place-content: space-evenly;
 }
 
 .footerlogo {
-  display: none;
-  float: right;
   max-width: 300px;
   height: auto;
-  margin: 50px;
-  margin-left: 60vw;
+  display: none;
 }
 
 footer p {
@@ -242,6 +243,8 @@ footer li a {
     display: grid;
     place-items: center;
     justify-items: end;
+    grid-column-start: 2;
+    grid-row-start: 1;
   }
 
   .icons {
@@ -282,7 +285,7 @@ footer li a {
   }
 
   .footerlogo {
-    display: flex;
+    display: block;
   }
 }
 
