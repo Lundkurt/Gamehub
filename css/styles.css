@@ -33,13 +33,39 @@ header {
   grid-template-rows: 70% 30%;
   max-height: 220px;
 }
+nav {
+  background-color: rgb(199, 199, 199);
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  right: 0px;
+  top: 70px;
+}
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
 
-.burger {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  position: absolute;
-  justify-self: right;
-  margin: 25px;
+.hamburger {
+  margin-top: 20px;
+  align-self: center;
+  margin-left: 35%;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.label {
+  background-image: url(../images/hamburger.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+  padding: 50px;
 }
 
 .searchbar {
@@ -231,7 +257,7 @@ footer li a {
 }
 
 @media (min-width: 1024px) {
-  .burger {
+  .hamburger {
     display: none;
   }
   header {
