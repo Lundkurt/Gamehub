@@ -11,6 +11,17 @@
 }
 
 @media (min-width: 1024px) {
+  .contacts-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    max-width: 1000px;
+  }
+  .about,
+  .contact,
+  .forms {
+    max-width: 25%;
+  }
   .container {
     grid-template-columns: repeat(3, 1fr);
     max-width: 928px;
@@ -112,10 +123,6 @@
 }
 
 @media (min-width: 1440px) {
-  main {
-    grid-template-columns: 20% 80%;
-  }
-
   .container {
     border-radius: 25px;
     margin-bottom: 10px;

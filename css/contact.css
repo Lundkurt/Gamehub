@@ -1,0 +1,61 @@
+@import "imports/variables.css";
+main {
+  background-image: url(../images/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+.about h2,
+.contact h2 {
+  color: var(--blackish);
+}
+.contacts-container {
+  background-color: var(--white);
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 35px;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.about,
+.contact,
+.forms {
+  max-width: 65%;
+}
+
+.forms {
+  background: radial-gradient(#3f518c, #14255d);
+  padding: 30px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.forms input,
+.forms textarea {
+  border-radius: 5px;
+  margin: 4px;
+}
+.forms input {
+  height: 1.5em;
+}
+
+#submit {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 1.5em;
+  border-color: white;
+  border-width: 3px;
+}
+#message {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}

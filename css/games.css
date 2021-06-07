@@ -146,3 +146,8 @@ h1 {
   justify-self: end;
   align-self: center;
 }
+@media (min-width: 1440px) {
+  main {
+    grid-template-columns: 20% 80%;
+  }
+} ;
