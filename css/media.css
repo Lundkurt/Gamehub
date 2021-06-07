@@ -129,11 +129,6 @@
     grid-column: 2;
   }
 
-  .product-container {
-    border-radius: 25px;
-    margin-top: 10px;
-  }
-
   .filter-label {
     display: none;
   }

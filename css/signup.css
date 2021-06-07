@@ -1,0 +1,46 @@
+@import "imports/variables.css";
+main {
+  background-image: url(../images/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+h1 {
+  color: var(--blackish);
+}
+.signup-form {
+  background-color: var(--white);
+  border-radius: 25px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 380px;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#signup {
+  background: var(--radial);
+  width: 13em;
+  height: 3em;
+  color: var(--white);
+  border-color: var(--white);
+  border-width: 3px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signup-form input {
+  border-radius: 5px;
+}
+.signup-form label {
+  color: var(--blackish);
+}

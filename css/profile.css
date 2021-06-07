@@ -1,0 +1,44 @@
+@import "imports/variables.css";
+main {
+  background-image: url(../images/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+h1,
+h2 {
+  color: var(--blackish);
+}
+h2 {
+  font-size: 1em;
+}
+
+.profile-container {
+  background-color: var(--white);
+  width: 75%;
+  margin: 30px auto;
+  border-radius: 25px;
+}
+
+.dummy {
+  width: 80px;
+  height: auto;
+  background-color: var(--light-grey);
+  padding: 10px;
+  border-radius: 25px;
+}
+.profile-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.profile-contents {
+  padding: 0px;
+  margin: 0px;
+  gap: 0px;
+}
