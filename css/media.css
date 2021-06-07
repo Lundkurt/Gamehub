@@ -1,0 +1,95 @@
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  header {
+    grid-template-columns: 60% 40%;
+  }
+  .wrapper {
+    max-width: 35vw;
+    height: 140px;
+    display: grid;
+    place-items: center;
+    justify-items: end;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .icons {
+    display: flex;
+    gap: 1rem;
+    font-family: "Montserrat";
+  }
+
+  .icon__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon__item img {
+    max-width: 40px;
+    padding: 15px;
+  }
+  .icon__item a {
+    text-decoration: none;
+    color: #1d2540;
+    font-size: 14px;
+  }
+  .button {
+    margin: 0px 20px 0px 20px;
+    max-width: 350px;
+  }
+  .buttontext-1,
+  .buttontext-2 {
+    position: absolute;
+    top: 23%;
+    left: 28%;
+  }
+  .buttontext-1 a,
+  .buttontext-2 a {
+    font-size: 28px;
+  }
+
+  .footerlogo {
+    display: block;
+  }
+}
+
+@media (min-width: 1300px) {
+  header {
+    grid-template-columns: 50% 50%;
+  }
+  .wrapper {
+  }
+
+  .button {
+    margin: 0px 40px 0px 40px;
+    max-width: 430px;
+  }
+  .buttontext-1,
+  .buttontext-2 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+  }
+  .buttontext-1 a,
+  .buttontext-2 a {
+    font-size: 33px;
+  }
+
+  .icon__item img {
+    max-width: 60px;
+    padding: 15px;
+  }
+
+  .logo {
+    max-width: 250px;
+    height: auto;
+    margin: 25px;
+  }
+  .searchbar {
+    margin-left: 280px;
+  }
+} ;
