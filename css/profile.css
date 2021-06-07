@@ -38,7 +38,39 @@ h2 {
 }
 
 .profile-contents {
-  padding: 0px;
-  margin: 0px;
-  gap: 0px;
+}
+
+.ccinfo {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-grey);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 15em;
+}
+
+.cclabel {
+  display: flex;
+  flex-direction: column;
+}
+.linetwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#expire,
+#cvc {
+  width: 3em;
+}
+#expire,
+#cvc,
+#ccard {
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
