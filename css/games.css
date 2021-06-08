@@ -8,7 +8,7 @@ main {
   min-height: 600px;
   display: grid;
 }
-h1 {
+main h1 {
   color: var(--blackish);
   margin-top: 0.5em;
 }
@@ -62,7 +62,7 @@ h1 {
 }
 
 .container {
-  background-color: #e4e4e4;
+  background-color: var(--whiteish);
   margin: auto;
   width: 90%;
   border-radius: 25px;

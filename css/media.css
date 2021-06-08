@@ -11,6 +11,9 @@
 }
 
 @media (min-width: 1024px) {
+  .profile-contents {
+    flex-direction: row;
+  }
   .contacts-container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -139,7 +142,7 @@
 
   .filtering {
     position: absolute;
-    background-color: var(--white);
+    background-color: var(--whiteish);
     border-radius: 25px;
     width: 15%;
     top: 230px;
@@ -151,9 +154,5 @@
   }
   .filtering h2 {
     color: var(--blackish);
-  }
-
-  footer {
-    z-index: 1000;
   }
 } ;

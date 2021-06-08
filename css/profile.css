@@ -8,11 +8,11 @@ main {
   min-height: 600px;
   display: grid;
 }
-h1,
-h2 {
+main h1,
+main h2 {
   color: var(--blackish);
 }
-h2 {
+main h2 {
   font-size: 1em;
 }
 
@@ -21,12 +21,13 @@ h2 {
   width: 75%;
   margin: 30px auto;
   border-radius: 25px;
+  max-width: 1000px;
 }
 
 .dummy {
   width: 80px;
   height: auto;
-  background-color: var(--light-grey);
+  background-color: var(--whiteish);
   padding: 10px;
   border-radius: 25px;
 }
@@ -35,19 +36,34 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   margin: 10px;
+  justify-content: left;
+  gap: 10px;
 }
 
 .profile-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.address,
+.payment,
+.order-history {
+  background-color: var(--whiteish);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 20em;
+}
 .ccinfo {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-grey);
+  background-color: var(--blue);
   padding: 10px;
-  margin: 10px;
+  margin: auto;
   border-radius: 10px;
   max-width: 15em;
+  color: var(--white);
 }
 
 .cclabel {
@@ -73,4 +89,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+}
+
+.buttons input {
+  background-color: var(--blackish);
+  color: #fff;
+  border-radius: 5px;
+  height: 2em;
 }
