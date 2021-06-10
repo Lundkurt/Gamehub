@@ -1,0 +1,85 @@
+@import "imports/variables.css";
+main {
+  background-image: url(../images/homebackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+main h2,
+main h4,
+main p,
+label {
+  color: var(--blackish);
+  font-family: "Montserrat";
+}
+
+.cart {
+  background-color: var(--white);
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 1000px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 400px;
+}
+
+.billing,
+.your-cart {
+  max-width: 400px;
+}
+.billing input {
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+  height: 1.5em;
+  margin: 5px;
+}
+
+.sum {
+  border-style: solid;
+  border-color: var(--light-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.sum-submit {
+  background-color: var(--whiteish);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.sum-submit img {
+  width: 169px;
+  height: auto;
+  margin: auto;
+}
+.sum-submit p {
+  margin: auto;
+}
+#sum-submit {
+  font-size: 1.5em;
+  width: 10em;
+  margin: 20px auto 20px auto;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--blackish);
+}

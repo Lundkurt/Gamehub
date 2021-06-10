@@ -6,6 +6,10 @@ li {
   color: #fff;
   margin: 0px;
 }
+label,
+input {
+  font-family: "Montserrat";
+}
 
 body {
   margin: 0px;

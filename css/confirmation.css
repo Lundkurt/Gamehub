@@ -1,0 +1,52 @@
+@import "imports/variables.css";
+main {
+  background-image: url(../images/homebackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+main h1,
+main h2,
+main h3,
+main p {
+  color: var(--blackish);
+}
+
+.success-container {
+  background-color: var(--white);
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  padding: 10px;
+  max-width: 1000px;
+}
+.success-container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.flexwrap-success {
+  display: flex;
+  flex-direction: column;
+}
+.thanks {
+  max-width: 300px;
+}
+
+.sum {
+  border-style: solid;
+  border-color: var(--light-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 0px;
+  min-width: 230px;
+  max-width: 300px;
+}
+.order-number {
+  font-size: 0.7em;
+}

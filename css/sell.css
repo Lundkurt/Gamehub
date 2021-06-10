@@ -1,0 +1,55 @@
+@import "imports/variables.css";
+main {
+  background-image: url(../images/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+
+main h1,
+main h2,
+main h3 {
+  color: var(--blackish);
+}
+
+.sell-container {
+  background-color: var(--white);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 1000px;
+}
+#gamesearch {
+  width: 60%;
+  height: 2em;
+  border-radius: 5px;
+  max-width: 500px;
+}
+#estimate {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  width: 10em;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.content,
+.condition {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sell-info {
+  max-width: 300px;
+}
+
+.flexwrap-sell {
+  display: flex;
+  flex-direction: column;
+}

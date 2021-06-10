@@ -1,6 +1,19 @@
 @import "imports/variables.css";
 
 @media (min-width: 768px) {
+  .cart {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .flexwrap-success {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
@@ -11,6 +24,21 @@
 }
 
 @media (min-width: 1024px) {
+  .check-price {
+    margin-top: 65px;
+  }
+  .sell-container {
+    padding-left: 50px;
+  }
+  .flexwrap-sell {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+  }
+  #gamesearch {
+    height: 3em;
+    margin-top: 20px;
+  }
   .profile-contents {
     flex-direction: row;
   }
@@ -126,6 +154,12 @@
 }
 
 @media (min-width: 1440px) {
+  .sell-info {
+  }
+  .flexwrap-sell {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .container {
     border-radius: 25px;
     margin-bottom: 10px;
