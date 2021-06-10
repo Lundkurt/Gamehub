@@ -1,0 +1,117 @@
+@import "../imports/variables.css";
+main {
+  background-image: url(../../images/homebackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  display: grid;
+}
+main h1,
+main h3,
+main h2 {
+  color: var(--blackish);
+}
+
+.product-specs {
+  background-color: var(--white);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.product img {
+  max-width: 200px;
+  height: auto;
+}
+.product p {
+  margin: 1px;
+  max-width: 400px;
+}
+.stars {
+  max-width: 130px;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#add-cart {
+  background-color: var(--blackish);
+  color: var(--white);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.popular {
+}
+.featured {
+  background: #fff;
+  max-width: 270px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 35px;
+  display: grid;
+  grid-template-columns: 35px 35px auto 50px 20px;
+  grid-template-rows: 159px 30px 20px 15px 60px;
+  grid-gap: 5px;
+  border-style: solid;
+  border-color: var(--light-grey);
+}
+.item-a {
+  height: 128px;
+  width: auto;
+  grid-column-start: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.item-b {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+.item-c {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  justify-self: start;
+  align-self: center;
+}
+
+.item-d {
+  grid-column-start: 2;
+}
+
+.item-e {
+  grid-column-start: 2;
+  grid-row-start: 5;
+  font-size: 30px;
+  justify-self: start;
+  align-self: center;
+}
+
+.item-f {
+  grid-column-start: 3;
+  grid-row-start: 5;
+  justify-self: end;
+  align-self: center;
+}
+
+.item-g {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  justify-self: end;
+  align-self: center;
+}

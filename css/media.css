@@ -1,6 +1,21 @@
 @import "imports/variables.css";
 
 @media (min-width: 768px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .buy-it {
+    align-self: end;
+    margin-left: 17%;
+  }
+  .product img {
+    margin: auto;
+  }
+  .popular-ppage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .cart {
     flex-direction: row;
     justify-content: space-between;
@@ -24,6 +39,20 @@
 }
 
 @media (min-width: 1024px) {
+  .product {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    max-width: 900px;
+  }
+  .buy-it {
+    margin: 0 auto 0 auto;
+  }
+  #add-cart {
+    margin-bottom: 1px;
+  }
+  .popular-ppage {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .check-price {
     margin-top: 65px;
   }
@@ -154,8 +183,10 @@
 }
 
 @media (min-width: 1440px) {
-  .sell-info {
+  .popular-ppage {
+    grid-template-columns: repeat(4, 1fr);
   }
+
   .flexwrap-sell {
     grid-template-columns: repeat(4, 1fr);
   }
