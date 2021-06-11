@@ -48,6 +48,11 @@
 }
 
 @media (min-width: 1024px) {
+  #buy,
+  #sell {
+    font-size: 1.7em;
+  }
+  ]
   .product {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
@@ -233,5 +238,16 @@
   }
   .filtering h2 {
     color: var(--blackish);
+  }
+}
+
+@media (min-width: 1800px) {
+  #buy,
+  #sell {
+    font-size: 2.3em;
+  }
+  .homebutton {
+    max-width: 1400px;
+    gap: 10%;
   }
 } ;
