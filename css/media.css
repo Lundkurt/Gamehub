@@ -1,6 +1,12 @@
 @import "imports/variables.css";
 
 @media (min-width: 768px) {
+  .homebutton {
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 0 auto 110px auto;
+  }
   .product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,12 +24,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .cart {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cart-contents {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .flexwrap-success {

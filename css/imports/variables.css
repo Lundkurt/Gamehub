@@ -5,6 +5,7 @@
   --light-grey: #707070;
   --white: #fff;
   --radial: radial-gradient(#3f518c, #14255d);
+  --linear: linear-gradient(#3f518c, #202946);
   --dark-grey: #4d4d4d;
   --whiteish: #e4e4e4;
 }

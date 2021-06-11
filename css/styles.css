@@ -6,6 +6,12 @@ li {
   color: #fff;
   margin: 0px;
 }
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
 label,
 input {
   font-family: "Montserrat";
@@ -252,6 +258,7 @@ footer p {
 
 footer h2 {
   margin-left: 15px;
+  padding-top: 10px;
 }
 
 footer li {

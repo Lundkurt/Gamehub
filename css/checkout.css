@@ -8,6 +8,7 @@ main {
   min-height: 600px;
   display: grid;
 }
+main h1,
 main h2,
 main h4,
 main p,
@@ -15,19 +16,28 @@ label {
   color: var(--blackish);
   font-family: "Montserrat";
 }
-
+main h1 {
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+main h2 {
+  margin-bottom: 10px;
+}
 .cart {
   background-color: var(--white);
   width: 80%;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 25px;
+  padding: 10px;
+  max-width: 1000px;
+}
+.cart-contents {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  max-width: 1000px;
 }
 .name {
   display: flex;
@@ -82,4 +92,5 @@ label {
   border-radius: 5px;
   color: var(--white);
   background-color: var(--blackish);
+  cursor: pointer;
 }

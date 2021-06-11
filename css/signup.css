@@ -10,7 +10,9 @@ main {
 }
 h1 {
   color: var(--blackish);
+  margin: 0;
 }
+
 .signup-form {
   background-color: var(--white);
   border-radius: 25px;

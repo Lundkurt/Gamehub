@@ -13,39 +13,23 @@ main h1 {
 }
 
 .homebutton {
-  text-align: center;
-  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 110px;
 }
-.button {
-  max-width: 300px;
-}
-
-.button-1 {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.button-2 {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
-.buttontext-1,
-.buttontext-2 {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-
-.buttontext-1 a,
-.buttontext-2 a {
-  text-decoration: none;
+#sell,
+#buy {
+  border-radius: 5px;
+  width: 12em;
+  font-size: 1.5em;
+  height: 2.2em;
+  background: var(--linear);
+  box-shadow: inset 0 0 0 2px var(--white);
+  border: 3px solid var(--blackish);
   color: #fff;
-  font-size: 26px;
-  font-family: "Montserrat";
+  cursor: pointer;
   font-weight: bold;
 }
 
