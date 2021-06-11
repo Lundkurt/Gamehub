@@ -12,7 +12,8 @@
   .product img {
     margin: auto;
   }
-  .popular-ppage {
+  .popular-ppage,
+  .other-feature {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -50,7 +51,8 @@
   #add-cart {
     margin-bottom: 1px;
   }
-  .popular-ppage {
+  .popular-ppage,
+  .other-feature {
     grid-template-columns: repeat(3, 1fr);
   }
   .check-price {
@@ -185,7 +187,8 @@
 }
 
 @media (min-width: 1440px) {
-  .popular-ppage {
+  .popular-ppage,
+  .other-feature {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -193,7 +196,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .container {
+  .container,
+  .container-search {
     border-radius: 25px;
     margin-bottom: 10px;
     grid-column: 2;

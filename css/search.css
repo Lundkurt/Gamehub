@@ -1,6 +1,6 @@
 @import "imports/variables.css";
 main {
-  background-image: url(../images/space.jpg);
+  background-image: url(../images/homebackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -8,25 +8,31 @@ main {
   min-height: 600px;
   display: grid;
 }
-main h1 {
+main h1,
+main h2,
+main h3 {
   color: var(--blackish);
-  margin-top: 0.5em;
+  margin: 20px;
 }
-label {
-  color: #fff;
-}
-
-.container {
+.container-search {
   background-color: var(--whiteish);
   margin: auto;
   width: 90%;
   border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: 1;
-  gap: 10px;
   padding-bottom: 25px;
+  max-width: 1200px;
+}
+.search-result {
+  max-width: 350px;
+}
+
+.other-feature {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-content: left;
 }
 
 @media (min-width: 1440px) {
