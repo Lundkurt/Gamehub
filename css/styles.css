@@ -124,7 +124,6 @@ nav ul li:hover {
 .featured {
   background: #fff;
   max-width: 270px;
-  margin: auto;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 35px 35px auto 50px 20px;
