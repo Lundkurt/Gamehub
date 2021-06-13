@@ -1,9 +1,5 @@
 main {
   background-image: url(../images/homebackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 main h1 {
   text-align: center;

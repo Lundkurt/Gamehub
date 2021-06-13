@@ -1,10 +1,6 @@
 @import "../imports/variables.css";
 main {
   background-image: url(../../images/homebackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   min-height: 600px;
   display: grid;
 }

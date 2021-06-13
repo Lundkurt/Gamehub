@@ -1,3 +1,14 @@
+main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+}
+
+a {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -160,7 +171,7 @@ nav ul li:hover {
 .item-e {
   grid-column-start: 2;
   grid-row-start: 5;
-  font-size: 30px;
+  font-size: 28px;
   justify-self: start;
   align-self: center;
 }
@@ -272,6 +283,7 @@ footer li a {
 
 .copyright {
   text-align: center;
+  padding-bottom: 10px;
 }
 .copyright a {
   font-size: 8px;

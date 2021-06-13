@@ -1,10 +1,6 @@
 @import "imports/variables.css";
 main {
   background-image: url(../images/homebackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   min-height: 600px;
   display: grid;
 }
@@ -19,8 +15,8 @@ main h3 {
   margin: auto;
   width: 90%;
   border-radius: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-bottom: 25px;
   max-width: 1200px;
 }

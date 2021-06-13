@@ -1,10 +1,6 @@
 @import "imports/variables.css";
 main {
   background-image: url(../images/space.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   min-height: 600px;
   display: grid;
 }
@@ -21,8 +17,8 @@ main h3 {
   margin: auto;
   padding: 20px;
   border-radius: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 1000px;
 }
 #gamesearch {

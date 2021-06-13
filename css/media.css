@@ -59,6 +59,7 @@
   }
   .profile-contents {
     flex-direction: row;
+    justify-content: start;
   }
   .about,
   .contact,
