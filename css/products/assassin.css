@@ -66,3 +66,16 @@ main h2 {
   border-style: solid;
   border-color: var(--light-grey);
 }
+.product-reviews {
+}
+
+.review {
+  border: solid var(--whiteish);
+  padding: 10px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.review img {
+  margin-top: 5px;
+}

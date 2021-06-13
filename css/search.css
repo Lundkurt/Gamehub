@@ -31,6 +31,10 @@ main h3 {
   gap: 10px;
   margin-left: 20px;
 }
+.featured {
+  border-style: solid;
+  border-color: var(--light-grey);
+}
 
 @media (min-width: 1024px) {
   main {
