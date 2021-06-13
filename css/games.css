@@ -8,9 +8,10 @@ main {
   min-height: 600px;
   display: grid;
 }
-main h1 {
+h1 {
   color: var(--blackish);
   margin-top: 0.5em;
+  margin-bottom: 20px;
 }
 label {
   color: #fff;
@@ -23,13 +24,19 @@ label {
   border-radius: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1;
-  gap: 10px;
   padding-bottom: 25px;
+  max-width: 1200px;
 }
 
-@media (min-width: 1440px) {
+.games-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+@media (min-width: 1024px) {
   main {
     grid-template-columns: 20% 80%;
   }
