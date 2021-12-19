@@ -32,9 +32,9 @@ body {
   margin: 0px;
   font-family: lato;
 }
-.featured h2,
-.featured p {
-  color: #1d2540;
+.game h3,
+.game p {
+  color: var(--blackish);
 }
 
 li {
@@ -132,63 +132,50 @@ nav ul li:hover {
   display: none;
 }
 
-.featured {
+.game {
   background: #fff;
-  max-width: 270px;
+  width: 250px;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: 35px 35px auto 50px 20px;
-  grid-template-rows: 159px 30px 20px 15px 60px;
-  grid-gap: 5px;
+  height: 300px;
+  box-shadow: 2px 2px 5px black;
 }
-.item-a {
-  height: 128px;
+
+.featured_image {
+  width: 250px;
+  height: 120px;
+  border-radius: 18px 18px 0px 0px;
+}
+
+.featured_title {
+  font-size: 1em;
+}
+
+.featured_price {
+  font-size: 2em;
+}
+
+.game p,
+.game h3 {
+  margin: 5px 5px 5px 5px;
+}
+
+.check {
+  display: none;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px 10px 15px;
+}
+
+.price input {
+  height: 39px;
   width: auto;
-  grid-column-start: 3;
-  justify-self: center;
-  align-self: center;
 }
 
-.item-b {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  justify-self: start;
-  align-self: center;
-}
-
-.item-c {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  justify-self: start;
-  align-self: center;
-}
-
-.item-d {
-  grid-column-start: 2;
-}
-
-.item-e {
-  grid-column-start: 2;
-  grid-row-start: 5;
-  font-size: 28px;
-  justify-self: start;
-  align-self: center;
-}
-
-.item-f {
-  grid-column-start: 3;
-  grid-row-start: 5;
-  justify-self: end;
-  align-self: center;
-}
-
-.item-g {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  justify-self: end;
-  align-self: center;
+.price input {
+  /* animation: spinner 1s linear; */
 }
 
 .filter-label {
@@ -214,10 +201,11 @@ nav ul li:hover {
   flex-direction: column;
   z-index: 10;
   border-radius: 35px 35px 0 0;
-  max-height: 600px;
+  max-height: 400px;
   width: 95%;
   padding-bottom: 50px;
 }
+
 .filtering input {
   width: 2em;
 }
@@ -287,4 +275,46 @@ footer li a {
 }
 .copyright a {
   font-size: 8px;
+}
+
+/* errormessage styling */
+.error {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: solid 1px red;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px black;
+  padding: 3px;
+}
+
+.success {
+  color: white;
+  background-color: rgba(0, 255, 0, 0.3);
+  border: solid 1px green;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px black;
+  padding: 3px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+}
+
+.loader {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: dotted 5px purple;
+  border-top: dotted 5px yellow;
+  animation: spinner 2s linear infinite;
+  margin: auto;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

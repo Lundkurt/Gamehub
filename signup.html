@@ -86,16 +86,31 @@
       <section class="signup-form">
         <h1>Sign up now!</h1>
         <p>Sign up now for benefits</p>
-        <label for="name">Username</label>
-        <input type="text" name="name" id="name" />
-        <label for="email">E-mail address</label>
-        <input type="email" name="email" id="email" />
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
-        <label for="confirm">Confirm password</label>
-        <input type="password" name="confirm" id="confirm" />
-        <form action="profile.html">
-          <input type="submit" value="Sign up!" id="signup" />
+        <div class="validate"></div>
+        <form id="signupForm">
+          <label for="name">Username</label>
+          <input type="text" name="name" id="username" />
+          <div class="form-error" id="usernameError">
+            Please enter a username
+          </div>
+          <label for="email">E-mail address</label>
+          <input type="email" name="email" id="email" />
+          <div class="form-error" id="emailError">
+            Please enter a valid email address
+          </div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <div class="form-error" id="passwordError">
+            Please enter a password with atleast 1 uppercase, 1 lowercase, 1
+            number and minimum 8 characters
+          </div>
+          <label for="confirm">Confirm password</label>
+          <input type="password" name="confirm" id="confirm" />
+          <div class="form-error" id="confirmError">
+            Please enter a matching password
+          </div>
+
+          <button id="signup">Sign up!</button>
         </form>
       </section>
     </main>
@@ -145,5 +160,8 @@
         <p>Copyright&copy;</p>
       </div>
     </footer>
+    <script src="js/components/forms.js"></script>
+    <script src="js/components/validatemessage.js"></script>
+    <script src="js/pages/signup.js"></script>
   </body>
 </html>

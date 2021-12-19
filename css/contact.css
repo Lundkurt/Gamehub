@@ -35,6 +35,9 @@ h1 {
 .forms {
   max-width: 65%;
 }
+.contact p {
+  margin: 0.5em;
+}
 
 .forms {
   background: radial-gradient(#3f518c, #14255d);
@@ -58,6 +61,11 @@ h1 {
   font-size: 1.5em;
   border-color: white;
   border-width: 3px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#submit:hover {
+  box-shadow: 5px 5px 5px black;
 }
 #message {
   margin-top: 25px;

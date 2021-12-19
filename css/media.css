@@ -36,6 +36,7 @@
   #buy,
   #sell {
     font-size: 1.7em;
+    padding: 12px;
   }
 
   #add-cart {
