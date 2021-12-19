@@ -174,10 +174,6 @@ nav ul li:hover {
   width: auto;
 }
 
-.price input {
-  /* animation: spinner 1s linear; */
-}
-
 .filter-label {
   background-image: url(../images/filter.png);
   display: inline-block;
@@ -299,6 +295,13 @@ footer li a {
 .form-error {
   display: none;
   color: red;
+}
+.on {
+  content: url(../images/added.png);
+}
+
+.off {
+  content: url(../images/addcart.png);
 }
 
 .loader {

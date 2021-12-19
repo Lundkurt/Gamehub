@@ -15,16 +15,15 @@ async function callApi() {
 function createGameCard(resource) {
   const gameCard = document.createElement("div");
   gameCard.classList.add("game");
-  gameCard.innerHTML = `<a href="details.html?id="${resource.id}">
+  gameCard.innerHTML = `<a href="details.html?id=${resource.id}">
     <img class="featured_image" src="${resource.background_image}" alt="${resource.name}"/></a>
   <h3 class="featured_title">${resource.name}</h3>
   <p>${resource.platforms[1].platform.name}</p>
   <p>Rating: ${resource.rating}</p>
   <div class="price">
-  <p class="featured_price">$49.99</p>
-  <button class="add-cart">
-<img src="images/addcart.png">
-</button></div>
+    <p class="featured_price">$49.99</p>
+    <img src="images/addcart.png" class="off" onclick="handleClick(this)" data-set="${resource.id}" >
+  </div>
   `;
   return gameCard;
 }

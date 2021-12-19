@@ -18,19 +18,19 @@ async function callApi(url) {
 }
 
 function createGameCard(resource) {
-  const gameCard = document.createElement("a");
-  gameCard.setAttribute("href", "details.html?id=" + resource.id);
-  gameCard.classList.add("featured");
-  gameCard.innerHTML = `<div class="game"> 
-  <img class="featured_image" src="${resource.background_image}" alt="${resource.name}"/>
-<h3 class="featured_title">${resource.name}</h3>
-<p>${resource.platforms[0].platform.name}</p>
-<p>Rating: ${resource.rating}</p>
-<div class="price">
-<p class="featured_price">$49.99</p>
-<input type="image" name="wishlist" src="images/addcart.png" alt="Add to cart"></div>
-
-</div>`;
+  const gameCard = document.createElement("div");
+  gameCard.classList.add("game");
+  gameCard.innerHTML = `<a href="details.html?id=${resource.id}">
+    <img class="featured_image" src="${resource.background_image}" alt="${resource.name}"/></a>
+  <h3 class="featured_title">${resource.name}</h3>
+  <p>${resource.platforms[0].platform.name}</p>
+  <p>Rating: ${resource.rating}</p>
+  <div class="price">
+    <p class="featured_price">$49.99</p>
+    <img src="images/addcart.png" class="off" onclick="handleClick(this)" data-set="${resource.id}" >
+    </div>
+  </div>
+  `;
   return gameCard;
 }
 
@@ -38,9 +38,8 @@ async function addPopularCard() {
   try {
     const results = await callApi(popularUrl);
     const games = results.results;
-    console.log(games); //returns the whole array
+    console.log(games);
     const popularGames = games.slice(0, 4);
-    console.log(popularGames); //returns the results i want
     const gameCardList = popularGames.map(createGameCard);
     popularContainer.append(...gameCardList);
     popularContainer.classList.remove("loader");

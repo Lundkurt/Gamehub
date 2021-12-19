@@ -55,13 +55,13 @@ function submitHandler(event) {
     !formState.emailInput.isValid ||
     !formState.messageInput.isValid
   ) {
-    validContainer.innerHTML = errorMessage(
+    validContainer.innerHTML = validateMessage(
       "Some fields are not correct, please try again",
       "error"
     );
     return;
   }
-  validContainer.innerHTML = errorMessage("Message sent!", "success");
+  validContainer.innerHTML = validateMessage("Message sent!", "success");
 }
 
 form.addEventListener("change", inputValidation);

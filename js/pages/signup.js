@@ -67,14 +67,14 @@ function submitHandler(event) {
     !formState.passwordInput.isValid ||
     !formState.passwordInput.isValid
   ) {
-    validContainer.innerHTML = errorMessage(
+    validContainer.innerHTML = validateMessage(
       "Some fields are not correct, please try again",
       "error"
     );
 
     return;
   }
-  validContainer.innerHTML = errorMessage(
+  validContainer.innerHTML = validateMessage(
     "Welcome" + " " + username.value + "!",
     "success"
   );

@@ -1,4 +1,4 @@
-function errorMessage(message, err) {
+function validateMessage(message, err) {
   if (err === undefined) {
     err = "error";
   }

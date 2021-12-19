@@ -32,7 +32,7 @@
         ><img src="images/GameHub_Logo.png" alt="Gamehub logo" class="logo"
       /></a>
       <button id="searchicon">
-        <a href="search.html"
+        <a href="games.html"
           ><img src="images/search.png" alt="searchicon"
         /></a>
       </button>
@@ -56,10 +56,6 @@
             <a href="signup.html">Sign up</a>
           </div>
           <div class="icon__item">
-            <a href="#"><img src="images/wishlist.png" alt="Wishlist" /></a>
-            <a href="#">Wishlist</a>
-          </div>
-          <div class="icon__item">
             <a href="checkout.html"><img src="images/cart.png" alt="Cart" /></a>
             <a href="checkout.html">Cart</a>
           </div>
@@ -73,7 +69,6 @@
             <li><a href="games.html">Games</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="signup.html">Sign up</a></li>
-            <li><a href="#">Wishlist</a></li>
             <li><a href="checkout.html">Cart</a></li>
           </ul>
         </nav>
@@ -87,40 +82,62 @@
         <div class="cart-contents">
           <div class="billing">
             <h2>Billing details</h2>
-            <form action="#">
+            <div class="validate"></div>
+            <form id="checkout">
               <div class="name">
                 <div>
-                  <label for="fname">First Name*</label> <br />
+                  <label for="fname">First Name*</label>
+                  <div class="form-error" id="fnameError">
+                    Please enter your first name
+                  </div>
                   <input type="text" id="fname" name="fname" />
                 </div>
                 <div>
-                  <label for="lname">Last Name*</label> <br />
+                  <label for="lname">Last Name*</label>
+                  <div class="form-error" id="lnameError">
+                    Please enter your last name
+                  </div>
                   <input type="text" id="lname" name="lname" />
                 </div>
               </div>
-              <label for="country">Country*</label><br />
-              <input type="text" name="country" id="country" /><br />
-              <label for="address">Street address*</label> <br />
+              <label for="country">Country*</label>
+              <div class="form-error" id="countryError">
+                Please enter a country
+              </div>
+              <input type="text" name="country" id="country" />
+
+              <label for="address">Street address*</label>
+              <div class="form-error" id="addressError">
+                Please enter a valid address
+              </div>
               <input
                 type="text"
                 id="address"
                 name="address"
                 placeholder="Street name and number"
               />
-              <br />
               <input
                 type="text"
                 id="address"
                 name="address"
                 placeholder="Address line two(optional)"
-              /><br />
-              <label for="city">City*</label> <br />
-              <input type="text" id="city" name="city" /><br />
-              <label for="zip">Postcode/zip*</label> <br />
-              <input type="text" id="zip" name="zip" /><br />
-              <label for="email">E-mail address*</label> <br />
+              />
+              <label for="city">City*</label>
+              <div class="form-error" id="cityError">
+                Please enter your city
+              </div>
+              <input type="text" id="city" name="city" />
+              <label for="zip">Postcode/zip*</label>
+              <div class="form-error" id="zipError">
+                Please enter your zip code
+              </div>
+              <input type="text" id="zip" name="zip" />
+              <label for="email">Email address*</label>
+              <div class="form-error" id="emailError">
+                Please enter a valid Email address
+              </div>
               <input type="email" id="email" name="email" />
-            </form>
+            
           </div>
           <div class="your-cart">
             <h2>Your cart</h2>
@@ -139,7 +156,6 @@
             <div class="sum-submit">
               <p>select payment method</p>
               <img src="images/payoptions.png" alt="pay-options" />
-              <form action="confirmation.html">
                 <input
                   type="submit"
                   name="sum-submit"
@@ -198,5 +214,8 @@
         <p>Copyright&copy;</p>
       </div>
     </footer>
+    <script src="js/components/validatemessage.js"></script>
+    <script src="js/components/forms.js"></script>
+    <script src="js/pages/checkout.js"></script>
   </body>
 </html>
