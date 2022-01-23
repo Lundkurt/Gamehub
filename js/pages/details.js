@@ -33,8 +33,7 @@ function createDetails(resource) {
   detailsContainer.innerHTML = `<div class="product"> <img src="${resource.images[0].src}" alt="${resource.name}" />
     <div class="info">
       <h1>${resource.name}</h1>
-      <p>${resource.tags.forEach(loop)}</p>
-      <p>Rating: ${resource.rating}</p>
+      <p>${resource.tags[0].name}</p>
       <p>
       </p>
     </div>

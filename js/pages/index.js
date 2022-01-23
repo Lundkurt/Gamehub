@@ -17,8 +17,7 @@ function createGameCard(resource) {
   gameCard.innerHTML = `<a href="details.html?id=${resource.id}">
     <img class="featured_image" src="${resource.images[0].src}" alt="${resource.name}"/></a>
   <h3 class="featured_title">${resource.name}</h3>
-  <p></p>
-  <p>Rating: </p>
+  <p>${resource.tags[0].name}</p>
   <div class="price">
     <p class="featured_price">${resource.price}kr</p>
     <img src="images/addcart.png" class="off" onclick="handleClick(this)" data-set="${resource.id}" >
