@@ -141,13 +141,18 @@ nav ul li:hover {
 }
 
 .featured_image {
-  width: 250px;
+  width: auto;
   height: 120px;
-  border-radius: 18px 18px 0px 0px;
+  margin-left: 78px;
+  margin-top: 5px;
+  
+}
+.featured_image:hover {
+  box-shadow: 2px 2px 5px black;
 }
 
 .featured_title {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .featured_price {
@@ -298,10 +303,12 @@ footer li a {
 }
 .on {
   content: url(../images/added.png);
+  cursor: pointer;
 }
 
 .off {
   content: url(../images/addcart.png);
+  cursor: pointer;
 }
 
 .loader {
