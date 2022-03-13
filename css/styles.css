@@ -51,6 +51,9 @@ header {
   grid-template-rows: 75% 25%;
   max-height: 200px;
 }
+.active {
+  color: rgb(0, 0, 177);
+}
 nav {
   background-color: var(--whiteish);
   display: none;
@@ -320,6 +323,7 @@ footer li a {
   animation: spinner 2s linear infinite;
   margin: auto;
 }
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);

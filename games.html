@@ -41,7 +41,7 @@
         <div class="icons">
           <div class="icon__item">
             <a href="games.html"><img src="images/game.png" alt="Games" /></a>
-            <a href="games.html">Shop</a>
+            <a href="games.html" class="active">Shop</a>
           </div>
           <div class="icon__item">
             <a href="contact.html"
@@ -70,7 +70,7 @@
         <input type="checkbox" id="hamburger-menu" name="hamburger-menu" />
         <nav>
           <ul class="menu">
-            <li><a href="games.html">Games</a></li>
+            <li><a href="games.html" class="active">Games</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="signup.html">Sign up</a></li>
             <!-- <li><a href="#">Wishlist</a></li> -->
@@ -89,6 +89,10 @@
             <div class="hide">
               <div class="filtering">
                 <h2>Consoles</h2>
+                <div class="checkmark">
+                  <input type="checkbox" id="playbox" name="playbox" />
+                  <label for="playbox">PlayBox</label>
+                </div>
                 <div class="checkmark">
                   <input type="checkbox" id="playstation" name="playstation" />
                   <label for="playstation">Playstation</label>
@@ -183,6 +187,7 @@
         <p>Copyright&copy;</p>
       </div>
     </footer>
+    <script src="js/components/validatemessage.js"></script>
     <script src="js/components/handleclick.js"></script>
     <script src="js/pages/games.js"></script>
   </body>

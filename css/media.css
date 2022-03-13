@@ -107,6 +107,9 @@
     color: #1d2540;
     font-size: 14px;
   }
+  .icon__item a.active {
+    color: rgb(0, 0, 177);
+  }
   .button {
     margin: 0px 20px 0px 20px;
     max-width: 350px;

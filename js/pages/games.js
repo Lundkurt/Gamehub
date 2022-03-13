@@ -4,37 +4,43 @@ const gamehubApiUrl =
 const gamesContainer = document.querySelector(".games-flex");
 
 async function callApi() {
-  const response = await fetch(gamehubApiUrl);
-  const data = await response.json();
+    try {
+        const response = await fetch(gamehubApiUrl)
+        const data = await response.json();
+        console.log(data);
+        postGames(data);
 
-  return data;
+    } catch {
+        console.warn("error");
+        gamesContainer.innerHTML = validateMessage("failed to fetch products", "error");
+        gamesContainer.classList.remove("loader");
+    }
+}
+callApi()
+
+
+
+function filtering() {
+    
 }
 
-function createGameCard(resource) {
-  const gameCard = document.createElement("div");
-  gameCard.classList.add("game");
-  gameCard.innerHTML = `<a href="details.html?id=${resource.id}">
-    <img class="featured_image" src="${resource.images[0].src}" alt="${resource.name}"/></a>
-  <h3 class="featured_title">${resource.name}</h3>
-  <p>${resource.tags[0].name}</p>
-  <div class="price">
-    <p class="featured_price">${resource.price}kr</p>
-    <img src="images/addcart.png" class="off" onclick="handleClick(this)" data-set="${resource.id}" >
-  </div>
-  `;
-  return gameCard;
-}
 
-async function makeListing() {
-  try {
-    const results = await callApi();
-    const gameCardList = results.map(createGameCard);
-    console.log(results);
-    gamesContainer.append(...gameCardList);
+function postGames(resource) {
     gamesContainer.classList.remove("loader");
-  } catch (error) {
-    console.warn(error);
-  }
-}
 
-makeListing();
+    resource.forEach(function(game) {
+        gamesContainer.innerHTML += 
+        `<div class="game"><a href="details.html?id=${game.id}">
+        <img class="featured_image" src="${game.images[0].src}" alt="${game.name}"/></a>
+      <h3 class="featured_title">${game.name}</h3>
+      <p>${game.tags[0].name}</p>
+      <div class="price">
+        <p class="featured_price">${game.price}kr</p>
+        <img src="images/addcart.png" class="off" onclick="handleClick(this)" data-set="${game.id}" >
+      </div>
+      </div>
+      `
+        
+    });
+
+}
